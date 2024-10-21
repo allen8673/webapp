@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+
+<body>
+
+    <div class="tab">
+        <button class="tablinks active" onclick="tabOnclick(event, 'dashboard_1')">Dashboard 1</button>
+        <button class="tablinks" onclick="tabOnclick(event, 'dashboard_2')">Dashboard 2</button>
+        <button class="tablinks" onclick="tabOnclick(event, 'dashboard_3')">Dashboard 3</button>
+    </div>
+
+    <div id="dashboard_1" class="tabcontent">
+        <p>dashboard 2 </p>
+        <iframe
+            src="https://adb-198721287136097.17.azuredatabricks.net/embed/dashboardsv3/01ef8d212af21867a5be2be0c6a3ecc0?o=198721287136097"
+            width="100%" height="600" frameborder="0"></iframe>
+    </div>
+
+    <div id="dashboard_2" class="tabcontent">
+        <p>dashboard 1 </p>
+        <iframe
+            src="https://adb-198721287136097.17.azuredatabricks.net/embed/dashboardsv3/01ef8d212af21867a5be2be0c6a3ecc0?o=198721287136097"
+            width="100%" height="600" frameborder="0"></iframe>
+    </div>
+
+    <div id="dashboard_3" class="tabcontent">
+        <p> Hello World</p>
+    </div>
+
+    <script src="dashboard.js"></script>
+
+</body>
+
+</html>
